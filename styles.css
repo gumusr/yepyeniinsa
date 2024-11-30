@@ -1,0 +1,99 @@
+/* Temel vücut stili ve sayfa arka planı */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Açık gri arka plan */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Metin rengi */
+    box-sizing: border-box;
+}
+
+/* Sayfa ortasında yer alan ana container */
+.container {
+    width: 100%;
+    max-width: 600px; /* Maksimum genişlik */
+    margin: 50px auto; /* Ortalanmış container */
+    padding: 30px;
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 8px; /* Yuvarlak köşeler */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Sayfa başlığı */
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* İsim ve soyisim input alanları */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Input odaklanıldığında sınır rengini değiştirme */
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Arama butonu stili */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Mavi renk */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Buton üzerine gelindiğinde renk değişimi */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sonuç kutusu stili */
+#sonuc {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Sayfa mobil uyumlu olacak şekilde stil ayarları */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #sonuc {
+        font-size: 16px;
+    }
+}
